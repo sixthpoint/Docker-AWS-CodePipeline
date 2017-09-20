@@ -1,0 +1,11 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - mvn clean
+      - mvn install
+artifacts:
+  files:
+    - 'Dockerfile'
+    - 'target/example-1.0.0-SNAPSHOT.jar'
